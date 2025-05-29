@@ -1,0 +1,43 @@
+.Check {
+    color: var(--textColorMain);
+    font-weight: 300;
+}
+
+.Check .options {
+    display: flex;
+    gap: 36px;
+    padding-top: 12px;
+}
+
+.Check label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.Check input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--orange);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.Check input:hover {
+    background: var(--orange);
+    border: solid 5px var(--componentsBackground);
+    outline: solid 1px var(--orange);
+    transition: 0.2s;
+}
+
+.Check input:checked {
+    background: var(--orange);
+    border: solid 2px var(--componentsBackground);
+    outline: solid 1px var(--orange);
+}

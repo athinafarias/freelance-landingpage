@@ -1,0 +1,13 @@
+.Tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.blue {
+    background-color: var(--blue);
+}

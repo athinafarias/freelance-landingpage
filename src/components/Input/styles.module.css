@@ -1,0 +1,8 @@
+.Input {
+    color: var(--textColorMain);
+}
+
+.Input:focus {
+    transition: 0.2s;
+    color: var(--orangeHover);
+}

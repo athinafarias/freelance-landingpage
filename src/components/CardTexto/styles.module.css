@@ -1,0 +1,7 @@
+.orange {
+    border: solid 1px var(--orange);
+}
+
+.blue {
+    border: solid 1px var(--blue);
+}

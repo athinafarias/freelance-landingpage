@@ -1,0 +1,28 @@
+.ButtonNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fill {
+    background-color: var(--orange);
+    color: var(--textColorContrast);
+    border: none;
+}
+
+.fill:hover {
+    background-color: var(--orangeHover);
+    transition: 0.3s;
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid var(--textColorMain);
+    color: var(--textColorMain);
+}
+
+.outline:hover {
+    border: 1px solid var(--orangeHover);
+    color: var(--orangeHover);
+    transition: 0.3s;
+}

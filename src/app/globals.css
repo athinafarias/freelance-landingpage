@@ -1,26 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #1C1B24;
+  --componentsBackground: #292732;
+  --sectionsBackground: ##3C1A51;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --textColorMain: #F4F4F2;
+  --textColorHover: #EAC9FF;
+  --textColorContrast: #1C1B24;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --purple: #734490;
+  --orange: #DC7344;
+  --blue: #0AD9CA;
+
+  --purpleHover: #A67BC0;
+  --orangeHover: #F5B396;
+
+  --glow: #9b86a87a;
+  /* box-shadow: 0px 0px 24px var(--glow); */
+
+  --fontTitle: "Red Hat Display", sans-serif;
+  --fontText: "Poppins", sans-serif;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--textColorMain);
+  font-family: var(--fontText);
 }

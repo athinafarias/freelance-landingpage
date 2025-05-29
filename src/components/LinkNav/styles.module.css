@@ -1,0 +1,11 @@
+.LinkNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColorMain);
+}
+
+.LinkNav:hover {
+    color: var(--textColorHover);
+    transition: 0.3s;
+}

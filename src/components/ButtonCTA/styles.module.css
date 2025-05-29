@@ -1,0 +1,11 @@
+.ButtonCTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 24px var(--glow);
+}
+
+.ButtonCTA:hover {
+    background-color: var(--purpleHover);
+    transition: 0.4s;
+}

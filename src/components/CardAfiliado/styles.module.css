@@ -1,0 +1,14 @@
+.CardAfiliado {
+    width: 524px;
+    box-sizing: border-box;
+    border: 1px solid var(--purple);
+}
+
+.CardAfiliado h3 {
+    font-family: var(--fontTitle);
+    font-weight: 800;
+}
+
+.CardAfiliado p {
+    line-height: 24px;
+}

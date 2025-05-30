@@ -6,3 +6,9 @@
     transition: 0.2s;
     color: var(--orangeHover);
 }
+
+.Input:hover {
+    transition: 0.2s;
+    color: var(--orangeHover);
+    border: solid 1px var(--orangeHover);
+}

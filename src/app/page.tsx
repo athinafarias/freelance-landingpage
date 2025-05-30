@@ -9,6 +9,7 @@ import UserImg from "@/components/UserImg";
 import ListTopic from "@/components/ListTopic";
 import Input from "@/components/Input";
 import Check from "@/components/Check";
+import CardAfiliado from "@/components/CardAfiliado";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Input type="email" placeholder="e-mail" width="480px" />
       <Input type="text" placeholder="nome" width="980px" />
       <Check pergunta="teste" opcao1="teste" opcao2="teste" />
+      <CardAfiliado txtTag="Afiliado" titulo="Afiliado da Mentoria Online" text="Indique o curso de Mentoria em Gestão Ágil e ajude líderes a estruturarem seus times com método e performance." txtBotao="Serviços" />
     </div>
   );
 }

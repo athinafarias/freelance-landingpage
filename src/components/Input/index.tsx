@@ -7,7 +7,7 @@ const Input: FC <InputProps> = ({ placeholder, type, width }) => {
         <input
             style={{ width }}
 
-            className={`${styles.Input} rounded-full px-6 py-3 border border-(--textColorMain) bg-transparent focus:outline-none focus:border-(--orange)`}
+            className={`${styles.Input} rounded-full px-6 py-3 border border-(--textColorMain) bg-transparent focus:outline-none focus:border-(--orangeHover)`}
 
             type={type} placeholder={placeholder} required
         />

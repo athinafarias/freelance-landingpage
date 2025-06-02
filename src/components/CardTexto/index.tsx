@@ -7,10 +7,10 @@ const CardTexto: FC <CardTextoProps> = ({ text, icon, variant, height, width }) 
         <div
             style={{ height, width }}
 
-            className={`${styles.CardTexto} ${variant === 'orange' ? styles.orange : styles.blue} bg-(--componentsBackground) rounded-2xl p-6 flex gap-6 justify-center items-start text-base`
+            className={`${styles.CardTexto} ${variant === 'orange' ? styles.orange : styles.blue} bg-(--componentsBackground) rounded-2xl py-5 px-8 flex gap-6 justify-center items-start text-base`
         }>
             {icon}
-            <p className="break-words">{text}</p>
+            <p className="break-words text-left">{text}</p>
         </div>
     )
 }

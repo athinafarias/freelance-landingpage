@@ -1,0 +1,16 @@
+.CardFeedback {
+    width: 524px;
+    box-sizing: border-box;
+    border: 1px solid var(--blue);
+    font-family: var(--fontText);
+    font-weight: 300;
+}
+
+.CardFeedback h4 {
+    font-family: var(--fontTitle);
+    font-weight: 800;
+}
+
+.CardFeedback p {
+    line-height: 24px;
+}

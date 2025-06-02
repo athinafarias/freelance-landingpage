@@ -1,0 +1,9 @@
+.AboutSection {
+    width: 100vw;
+    background-color: var(--sectionsBackground);
+}
+
+.AboutSectionText {
+    width: 28vw;
+    text-align: justify;
+}

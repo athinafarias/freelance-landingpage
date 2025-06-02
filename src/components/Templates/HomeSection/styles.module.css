@@ -1,0 +1,11 @@
+.HomeSectionContent {
+    width: 28vw;
+}
+
+.HomeSection img {
+    max-width: 463px;
+}
+
+.HomeSectionContent p {
+    text-align: justify;
+}

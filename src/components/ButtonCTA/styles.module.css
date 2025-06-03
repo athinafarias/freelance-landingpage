@@ -10,3 +10,7 @@
     background-color: var(--purpleHover);
     transition: 0.4s;
 }
+
+.ButtonCTA a {
+    display: inline;
+}

@@ -6,7 +6,7 @@ const Link: FC <LinkProps> = ({ link, text, fontWeight }) => {
     return (
         <a
             style={{ fontWeight }}
-            className={`${styles.Link} .cursor-pointer h-12 px-8 py-4 font-(family-name:--fontText) text-sm`}
+            className={`${styles.Link} .cursor-pointer h-12 font-(family-name:--fontText) text-sm`}
             href={link}
         >
             {text}

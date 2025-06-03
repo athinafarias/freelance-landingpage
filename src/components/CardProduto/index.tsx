@@ -6,7 +6,7 @@ import { CardProdutoProps } from './types'
 import styles from './styles.module.css'
 import { FC } from 'react'
 
-const CardProduto:FC <CardProdutoProps> = ({ txtTag, titulo, text, txtList1, txtList2, txtList3, text2, txtButton, srcImg, imgPosition = 'right' }) => {
+const CardProduto:FC <CardProdutoProps> = ({ txtTag, titulo, text, txtList1, txtList2, txtList3, text2, linkCTA, txtButton, srcImg, imgPosition = 'right' }) => {
     return (
         <div className={`${styles.CardProduto} flex items-center gap-14 bg-(--componentsBackground) rounded-2xl p-14 justify-center text-base font-light`}>
             {imgPosition === 'left' && <img src={srcImg} alt="" />}
@@ -24,7 +24,7 @@ const CardProduto:FC <CardProdutoProps> = ({ txtTag, titulo, text, txtList1, txt
                     </div>
                     <p>{text2}</p>
                 </div>
-                <ButtonCTA text={txtButton} padding="20px 40px" />
+                <ButtonCTA link={linkCTA} text={txtButton} padding="20px 40px" />
             </div>
             {imgPosition === 'right' && <img src={srcImg} alt="" />}
         </div>

@@ -1,5 +1,3 @@
-import ButtonCTA from "@/components/ButtonCTA";
-
 import styles from "./styles.module.css";
 import ListTopic from "@/components/ListTopic";
 

@@ -42,7 +42,7 @@ const ContatoSection = () => {
                 <div className="flex flex-col items-center justify-center gap-10 text-center">
                     <h1>Está pronto para mudar a realidade do seu time?</h1>
                     <p>Você pode continuar apagando incêndios... ou <br/> aprender a liderar com método, foco e clareza!</p>
-                    <ButtonCTA text="Quero Começar Agora" padding="30px 150px" />
+                    <ButtonCTA link="" text="Quero Começar Agora" padding="30px 150px" />
                 </div>
             </div>
         </section>

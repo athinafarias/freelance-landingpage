@@ -13,7 +13,7 @@ const HomeSection = () => {
                 <p>Se você está cansado de projetos que não saem do papel ou equipes perdidas em meio a demandas sem fim, eu entendo. Já passei por isso e, depois de mais de 15 anos ajudando empresas como a sua, criei um método direto para transformar o caos em resultados.
                 <br/>Não é teoria - são técnicas que aplico diariamente e que funcionam.
                 </p>
-                <ButtonCTA text="Quero Aprender Agora" padding="20px" />
+                <ButtonCTA link="" text="Quero Aprender Agora" padding="20px" />
             </div>
             <div>
                 <img src="/assets/images/section01.png" alt="" />

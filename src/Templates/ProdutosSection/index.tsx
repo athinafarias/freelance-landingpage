@@ -20,6 +20,7 @@ const ProdutosSection = () => {
                         txtList2={<><span className="font-semibold text-(--blue)">Organizar entregas</span> com agilidade real (não só no nome).</>}
                         txtList3={<><span className="font-semibold text-(--blue)">Aplicar frameworks</span> de forma prática, não teórica</>}
                         text2="O conteúdo? São as mesmas estratégias que uso em mentorias individuais, agora disponíveis para você, no seu ritmo. Com videoaulas, templates prontos e uma comunidade para trocar ideias." 
+                        linkCTA=""
                         txtButton="Quero fazer parte"
                         srcImg="/assets/images/produto01.png"
                         imgPosition='right'
@@ -33,6 +34,7 @@ const ProdutosSection = () => {
                         txtList2="Comparativos honestos entre frameworks – o que vale a pena e o que é moda."
                         txtList3={<>Estratégias para <span className="font-semibold text-(--blue)">adaptar a agilidade</span> à sua realidade, não o contrário..</>}
                         text2=""
+                        linkCTA="https://go.hotmart.com/C99184257E"
                         txtButton="Quero meu Ebook agora"
                         srcImg="/assets/images/produto02.png"
                         imgPosition='left'
@@ -46,8 +48,20 @@ const ProdutosSection = () => {
                     <p className="mt-8 mb-16 w-180">Acredita que a agilidade pode mudar a forma como as equipes trabalham? <br/> Então junte-se a mim como afiliado e:</p>
                 </div>
                 <div className="flex gap-8">
-                    <CardAfiliado txtTag="Afiliado" titulo="Indique a Mentoria Online" text="E e ganhe comissões por cada líder que você ajudar a sair do caos." txtBotao="Quero ser parceiro" />
-                    <CardAfiliado txtTag="Afiliado" titulo="Divulgue o E-Book" text="E e leve conteúdo valioso para quem está começando – enquanto é remunerado por isso." txtBotao="Quero ser parceiro" />
+                    <CardAfiliado
+                        txtTag="Afiliado"
+                        titulo="Indique a Mentoria Online"
+                        text="E e ganhe comissões por cada líder que você ajudar a sair do caos."
+                        linkCTA="https://dashboard.kiwify.com.br/join/affiliate/rVgCBq3x"
+                        txtBotao="Quero ser parceiro"
+                    />
+                    <CardAfiliado
+                        txtTag="Afiliado"
+                        titulo="Divulgue o E-Book"
+                        text="E e leve conteúdo valioso para quem está começando - enquanto é remunerado por isso."
+                        linkCTA="https://dashboard.kiwify.com.br/join/affiliate/y0XWk5z8"
+                        txtBotao="Quero ser parceiro"
+                    />
                 </div>
                 <span className="font-semibold text-(--blue) mt-12 mb-16 italic">Simples, transparente e com impacto real.</span>
             </div>

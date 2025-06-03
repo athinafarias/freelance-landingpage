@@ -1,0 +1,21 @@
+.Footer ul {
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.FooterLi {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-bottom: 6px;
+}
+
+.FooterHr {
+    border: none;
+    border-top: solid 1px var(--orange);
+    width: 100%;
+    margin: 26px 0;
+}

@@ -1,6 +1,5 @@
 import CardFeedback from "@/components/CardFeedback";
 import styles from "./styles.module.css";
-import ListTopic from "@/components/ListTopic";
 
 const FeedbacksSection = () => {
     return (

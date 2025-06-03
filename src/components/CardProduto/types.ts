@@ -8,6 +8,7 @@ export interface CardProdutoProps {
     txtList2: ReactNode;
     txtList3: ReactNode;
     text2?: string;
+    linkCTA: string;
     txtButton: string;
     srcImg: string;
     imgPosition?: 'left' | 'right';

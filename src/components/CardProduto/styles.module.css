@@ -1,0 +1,10 @@
+.CardProduto {
+    width: 56vw;
+    border: 1px solid var(--purple);
+    box-sizing: border-box;
+}
+
+.CardProduto h3 {
+    font-size: 1.4rem;
+    font-family: var(--fontTitle);
+}

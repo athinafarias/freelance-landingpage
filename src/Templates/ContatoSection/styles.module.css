@@ -1,0 +1,9 @@
+.ContatoSection form {
+    width: 900px;
+    border: solid 1px var(--orange);
+}
+
+.ContatoSection legend {
+    font-size: 32px;
+    font-family: var(--fontTitle);
+}

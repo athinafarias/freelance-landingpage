@@ -23,7 +23,7 @@ const SolucoesSection = () => {
             <div className="mb-24">
                 <h1 className="mt-16 mb-12">O que você vai aprender comigo:</h1>
                 <div className="flex flex-row justify-between items-center gap-12">
-                    <div>
+                    <div className="flex flex-col justify-center items-center gap-8">
                         <img src="/assets/images/section03.png" alt="" />
                         <ButtonCTA text="Quero colocar meu time no eixo" padding="20px 40px" />
                     </div>

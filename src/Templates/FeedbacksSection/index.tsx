@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 const FeedbacksSection = () => {
     return (
         <div className={`${styles.FeedbacksSection} flex justify-center items-center`}>
-            <section className={`${styles.Section} py-30 px-80 flex flex-col justify-between items-center`}>
+            <section id="feedbacksSection" className={`${styles.Section} py-30 px-80 flex flex-col justify-between items-center`}>
                 <div className="flex flex-col justify-center items-center text-center">
                     <h1>O que dizem sobre a <span className="text-(--blue)">Mentoria em Gestão Ágil</span></h1>
                     <p className="mt-8 mb-16">Líderes e profissionais de TI compartilham como a metodologia prática e direta da mentoria transformou suas rotinas, seus resultados e suas equipes.  Mais do que conteúdo, o que entregamos é <span className="text-(--orange)">clareza, método e performance de verdade</span>.</p>

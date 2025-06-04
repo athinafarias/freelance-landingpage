@@ -17,12 +17,20 @@
 
   --purpleHover: #A67BC0;
   --orangeHover: #F5B396;
+  --blueHover: #85faf2;
 
   --glow: #9b86a87a;
   /* box-shadow: 0px 0px 24px var(--glow); */
 
+  --shadow: #1b1022ad;
+  /* box-shadow: 0px 0px 34px 10px var(--shadow); */
+
   --fontTitle: "Red Hat Display", sans-serif;
   --fontText: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,4 +58,14 @@ h1 {
 p {
   font-weight: 300;
   line-height: 160%;
+}
+
+.react-scroll-to-top {
+  transition: opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+.react-scroll-to-top--visible {
+  opacity: 1;
+  pointer-events: auto;
 }

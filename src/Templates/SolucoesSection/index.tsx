@@ -5,7 +5,7 @@ import Seta from "@/components/Seta";
 
 const SolucoesSection = () => {
     return (
-        <section className={`${styles.SolucoesSection} py-30 px-80 flex flex-col justify-between items-center gap-12`}>
+        <section id="solucoesSection" className={`${styles.SolucoesSection} py-30 px-80 flex flex-col justify-between items-center gap-12`}>
             <div>
                 <div>
                     <h1>Você enfrenta esses desafios no seu dia a dia?</h1>
@@ -25,7 +25,7 @@ const SolucoesSection = () => {
                 <div className="flex flex-row justify-between items-center gap-12">
                     <div className="flex flex-col justify-center items-center gap-8">
                         <img src="/assets/images/section03.png" alt="" />
-                        <ButtonCTA text="Quero colocar meu time no eixo" padding="20px 40px" />
+                        <ButtonCTA link="#produtosSection" text="Quero colocar meu time no eixo" padding="20px 40px" />
                     </div>
                     <div className={`${styles.SolucoesSectionCards} flex flex-wrap gap-3`}>
                         <CardTexto icon={<img src="/assets/icons/icon-clock.svg" alt="" />} text="Como aplicar na prática os princípios do Scrum e da agilidade, sem enrolação." variant="blue" height="fit-content" width="310px" />

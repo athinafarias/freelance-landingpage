@@ -8,7 +8,7 @@ import ButtonCTA from "@/components/ButtonCTA";
 
 const ContatoSection = () => {
     return (
-        <section className={`${styles.ContatoSection} py-30 px-80 flex flex-col justify-between items-center gap-12`}>
+        <section id="contatoSection" className={`${styles.ContatoSection} py-30 px-80 flex flex-col justify-between items-center gap-12`}>
             <Seta variant="orange" />
             <div className="flex flex-col items-center justify-center text-center">
                 <div>

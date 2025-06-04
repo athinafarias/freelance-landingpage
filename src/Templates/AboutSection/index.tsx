@@ -3,7 +3,7 @@ import ListTopic from "@/components/ListTopic";
 
 const AboutSection = () => {
     return (
-        <div className={`${styles.AboutSection} flex justify-center items-center`}>
+        <div id="aboutSection" className={`${styles.AboutSection} flex justify-center items-center`}>
             <section className={`${styles.Section} py-30 px-80 flex justify-between items-center`}>
 
                 <img src="/assets/images/section02.png" alt="" />

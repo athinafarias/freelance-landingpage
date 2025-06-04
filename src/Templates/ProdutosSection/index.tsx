@@ -5,7 +5,7 @@ import CardProduto from "@/components/CardProduto";
 
 const ProdutosSection = () => {
     return (
-        <section className={`${styles.ProdutosSection} py-10 px-80 flex flex-col justify-between items-center gap-12`}>
+        <section id="produtosSection" className={`${styles.ProdutosSection} py-10 px-80 flex flex-col justify-between items-center gap-12`}>
             <div>
                 <div className="flex flex-col items-center text-center">
                     <h1>Acelere sua jornada com soluções que se adaptam a você!</h1>
@@ -42,7 +42,7 @@ const ProdutosSection = () => {
                 </div>
             </div>
             <img src="/assets/icons/div.svg" alt="" className="mt-8 mb-8" />
-            <div className="flex flex-col items-center justify-center text-center">
+            <div id="parceirosSection" className="flex flex-col items-center justify-center text-center">
                 <div className="flex flex-col items-center justify-center text-center">
                     <h1>Seja um parceiro e lucre com conhecimento que transforma</h1>
                     <p className="mt-8 mb-16 w-180">Acredita que a agilidade pode mudar a forma como as equipes trabalham? <br/> Então junte-se a mim como afiliado e:</p>

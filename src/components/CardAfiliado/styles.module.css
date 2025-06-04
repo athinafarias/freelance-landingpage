@@ -2,6 +2,7 @@
     width: 524px;
     box-sizing: border-box;
     border: 1px solid var(--purple);
+    transition: 0.3s ease-in-out;
 }
 
 .CardAfiliado h3 {
@@ -11,4 +12,8 @@
 
 .CardAfiliado p {
     line-height: 24px;
+}
+
+.CardAfiliado:hover {
+    box-shadow: 0px 0px 24px #7344904f;
 }

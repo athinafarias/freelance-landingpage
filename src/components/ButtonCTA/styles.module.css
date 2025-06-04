@@ -4,11 +4,11 @@
     justify-content: center;
     box-shadow: 0px 0px 24px var(--glow);
     width: 100%;
+    transition: 0.4s ease-in-out;
 }
 
 .ButtonCTA:hover {
     background-color: var(--purpleHover);
-    transition: 0.4s;
 }
 
 .ButtonCTA a {

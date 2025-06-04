@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className={`${styles.Footer} flex flex-col items-center justify-between w-full px-40 mt-24`}>
                 <div className="flex items-center justify-between w-full">
-                    <img src="" alt="logo" />
+                    <img src="/assets/logo.svg" alt="logo" />
                     <ul>
                         <li className={`${styles.FooterLi}`}>Produtos</li>
                         <li><Link link="" text="Mentoria" fontWeight="300" /></li>

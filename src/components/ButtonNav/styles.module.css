@@ -8,21 +8,21 @@
     background-color: var(--orange);
     color: var(--textColorContrast);
     border: none;
+    transition: 0.3s ease-in-out;
 }
 
 .fill:hover {
     background-color: var(--orangeHover);
-    transition: 0.3s;
 }
 
 .outline {
     background: transparent;
     border: 1px solid var(--textColorMain);
     color: var(--textColorMain);
+    transition: 0.3s ease-in-out;
 }
 
 .outline:hover {
     border: 1px solid var(--orangeHover);
     color: var(--orangeHover);
-    transition: 0.3s;
 }

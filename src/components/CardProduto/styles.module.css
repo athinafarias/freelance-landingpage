@@ -2,9 +2,14 @@
     width: 56vw;
     border: 1px solid var(--purple);
     box-sizing: border-box;
+    transition: 0.3s ease-in-out;
 }
 
 .CardProduto h3 {
     font-size: 1.4rem;
     font-family: var(--fontTitle);
+}
+
+.CardProduto:hover {
+    box-shadow: 0px 0px 44px #7344904f;
 }

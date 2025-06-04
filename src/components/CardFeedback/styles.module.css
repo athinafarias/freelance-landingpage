@@ -4,6 +4,7 @@
     border: 1px solid var(--blue);
     font-family: var(--fontText);
     font-weight: 300;
+    transition: 0.3s ease-in-out;
 }
 
 .CardFeedback h4 {
@@ -18,4 +19,8 @@
 .CardFeedbackImg {
     width: 64px;
     height: 64px;
+}
+
+.CardFeedback:hover {
+    box-shadow: 0px 0px 24px #0ad9cb50;
 }

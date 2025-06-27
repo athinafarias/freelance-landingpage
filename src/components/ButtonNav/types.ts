@@ -1,5 +1,7 @@
 export interface ButtonNavProps {
-    link: string;
+    link?: string;
     text: string;
     variant?: 'fill' | 'outline';
+    type?: 'button' | 'submit';
+    onClick?: () => void;
 }

@@ -17,22 +17,38 @@ const ContatoSection = () => {
                 </div>
                 <p className="w-200"> Preencha o formulário e entre para a minha lista de contatos: você receberá conteúdos práticos, lives exclusivas, cupons especiais e, se já for cliente, bônus complementares ao seu produto.</p>
                 <div>
-                    <form className="flex flex-col gap-4 bg-(--componentsBackground) rounded-2xl px-12 py-8 justify-between items-center mt-14 mb-12">
+                    <form action="https://formsubmit.co/cc43fa8d81913a505529dc9046a54157" method="POST" className="flex flex-col gap-4 bg-(--componentsBackground) rounded-2xl px-12 py-8 justify-between items-center mt-14 mb-12">
                         <legend className="mb-6 font-bold">Vamos Ficar em Contato?</legend>
-                        <Input placeholder="Nome completo" type="text" />
+                        <Input placeholder="Nome completo" type="text" name="nome" />
                         <div className="flex gap-6 w-full">
-                            <Input placeholder="E-mail" type="email" />
-                            <Input placeholder="Celular" type="tel" />
+                            <Input placeholder="E-mail" type="email" name="email" />
+                            <Input placeholder="Celular" type="tel" name="telefone" />
                         </div>
-                        <Input placeholder="Cargo / Empresa (opcional)" type="" />
+                        <Input placeholder="Cargo / Empresa (opcional)" type="text" name="cargo_empresa" />
                         <div className="flex justify-start gap-36 w-full px-4 py-6 text-left">
-                            <Check pergunta="Você já adquiriu algum produto?" opcao1="Sim" opcao2="Não" />
-                            <Check pergunta="Qual produto?" opcao1="Mentoria" opcao2="Ebook" />
+                            <Check 
+                                pergunta="Você já adquiriu algum produto?" 
+                                opcao1="Sim" 
+                                opcao2="Não" 
+                                name="adquiriu_produto" 
+                            />
+                            <Check 
+                                pergunta="Qual produto?" 
+                                opcao1="Mentoria" 
+                                opcao2="Ebook" 
+                                name="tipo_produto" 
+                            />
                         </div>
-                        <Input placeholder="Como posso te ajudar? (Campo aberto para dúvidas, interesses ou recados)" type="text" />
+                        <Input placeholder="Como posso te ajudar? (Campo aberto para dúvidas, interesses ou recados)" type="text" name="mensagem" />
                         <div className="mt-6">
-                            <ButtonNav text="Enviar" variant="fill" />
+                            <ButtonNav text="Enviar" variant="fill" type="submit" />
                         </div>
+                        
+                        {/* Campos ocultos do FormSubmit */}
+                        <input type="hidden" name="_subject" value="Novo contato via site - Landing Page" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem e retornaremos em breve!" />
+                        <input type="hidden" name="_template" value="table" />
                     </form>
                 </div>
             </div>

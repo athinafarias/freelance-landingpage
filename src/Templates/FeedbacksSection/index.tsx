@@ -4,12 +4,12 @@ import styles from "./styles.module.css";
 const FeedbacksSection = () => {
     return (
         <div className={`${styles.FeedbacksSection} flex justify-center items-center`}>
-            <section id="feedbacksSection" className={`${styles.Section} py-30 px-80 flex flex-col justify-between items-center`}>
-                <div className="flex flex-col justify-center items-center text-center">
+            <section id="feedbacksSection" className={`responsive-margin-y flex flex-col justify-center items-center w-full`}>
+                <div className="flex flex-col justify-center items-center text-center mb-12 lg:mb-16">
                     <h1>O que dizem sobre a <span className="text-(--blue)">Mentoria em Gestão Ágil</span></h1>
-                    <p className="mt-8 mb-16">Líderes e profissionais de TI compartilham como a metodologia prática e direta da mentoria transformou suas rotinas, seus resultados e suas equipes.  Mais do que conteúdo, o que entregamos é <span className="text-(--orange)">clareza, método e performance de verdade</span>.</p>
+                    <p className="mt-6 lg:mt-8 max-w-4xl px-4">Líderes e profissionais de TI compartilham como a metodologia prática e direta da mentoria transformou suas rotinas, seus resultados e suas equipes. Mais do que conteúdo, o que entregamos é <span className="text-(--orange)">clareza, método e performance de verdade</span>.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 w-full" >
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-full max-w-6xl" >
 
                     <CardFeedback
                         srcImg="/assets/feedbacks/user03.png"

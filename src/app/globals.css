@@ -27,6 +27,12 @@
 
   --fontTitle: "Red Hat Display", sans-serif;
   --fontText: "Poppins", sans-serif;
+
+  /* Responsive spacing */
+  --section-padding-mobile: 16px;
+  --section-padding-tablet: 40px;
+  --section-padding-desktop: 80px;
+  --section-padding-large: 120px;
 }
 
 html {
@@ -42,7 +48,32 @@ body {
 }
 
 section {
-    width: 90vw;
+  width: 100%;
+  max-width: 100vw;
+  padding-left: var(--section-padding-mobile);
+  padding-right: var(--section-padding-mobile);
+}
+
+/* Responsive section padding */
+@media (min-width: 640px) {
+  section {
+    padding-left: var(--section-padding-tablet);
+    padding-right: var(--section-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-left: var(--section-padding-desktop);
+    padding-right: var(--section-padding-desktop);
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    padding-left: var(--section-padding-large);
+    padding-right: var(--section-padding-large);
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -50,14 +81,104 @@ h1, h2, h3, h4, h5 {
     line-height: 110%;
 }
 
+/* Responsive typography */
 h1 {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 p {
   font-weight: 300;
   line-height: 160%;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Utility classes for responsive spacing */
+.responsive-padding {
+  padding-left: var(--section-padding-mobile);
+  padding-right: var(--section-padding-mobile);
+}
+
+@media (min-width: 640px) {
+  .responsive-padding {
+    padding-left: var(--section-padding-tablet);
+    padding-right: var(--section-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-padding {
+    padding-left: var(--section-padding-desktop);
+    padding-right: var(--section-padding-desktop);
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-padding {
+    padding-left: var(--section-padding-large);
+    padding-right: var(--section-padding-large);
+  }
+}
+
+/* Responsive margin utilities */
+.responsive-margin-y {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1024px) {
+  .responsive-margin-y {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+/* Container utilities */
+.container-responsive {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: var(--section-padding-mobile);
+  padding-right: var(--section-padding-mobile);
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding-left: var(--section-padding-tablet);
+    padding-right: var(--section-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding-left: var(--section-padding-desktop);
+    padding-right: var(--section-padding-desktop);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-responsive {
+    padding-left: var(--section-padding-large);
+    padding-right: var(--section-padding-large);
+  }
 }
 
 .react-scroll-to-top {
@@ -72,4 +193,26 @@ p {
 
 button, a { 
   cursor: pointer;
+}
+
+/* Hide elements on mobile when needed */
+.hidden-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hidden-mobile {
+    display: block;
+  }
+}
+
+/* Show only on mobile */
+.show-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .show-mobile {
+    display: none;
+  }
 }

@@ -1,7 +1,27 @@
 .ContatoSection form {
-    width: 900px;
+    width: 100%;
+    max-width: 100%;
     border: solid 1px var(--orange);
     transition: 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+    .ContatoSection form {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ContatoSection form {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .ContatoSection form {
+        max-width: 900px;
+    }
 }
 
 .ContatoSection form:hover {
@@ -9,6 +29,25 @@
 }
 
 .ContatoSection legend {
-    font-size: 32px;
+    font-size: 20px;
     font-family: var(--fontTitle);
+    font-weight: 700;
+}
+
+@media (min-width: 640px) {
+    .ContatoSection legend {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ContatoSection legend {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .ContatoSection legend {
+        font-size: 32px;
+    }
 }

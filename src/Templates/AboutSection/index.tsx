@@ -4,11 +4,17 @@ import ListTopic from "@/components/ListTopic";
 const AboutSection = () => {
     return (
         <div id="aboutSection" className={`${styles.AboutSection} flex justify-center items-center`}>
-            <section className={`${styles.Section} py-30 px-80 flex justify-between items-center`}>
+            <section className={`responsive-margin-y flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12`}>
 
-                <img src="/assets/images/section02.png" alt="" />
+                <div className={`${styles.AboutSectionImage} flex justify-center lg:justify-start w-full lg:w-auto order-2 lg:order-1`}>
+                    <img 
+                        src="/assets/images/section02.png" 
+                        alt="Rafael Forneiro" 
+                        className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto"
+                    />
+                </div>
 
-                <div className={`${styles.AboutSectionText} flex flex-col gap-12`}>
+                <div className={`${styles.AboutSectionText} flex flex-col gap-8 lg:gap-12 text-center lg:text-left order-1 lg:order-2`}>
                     <h1>Quem é Rafael Forneiro?</h1>
                     <p>Me chamo Rafael Forneiro e, antes de ser CEO da <span className="text-(--orange) underline">RF Consultoria</span>, fui um profissional de TI como você. Entendi na pele o que é lidar com prazos apertados, expectativas altas e a frustração de ver projetos travados.</p>
 

@@ -1,15 +1,55 @@
 .Input {
     color: var(--textColorMain);
     width: 100%;
+    min-height: 44px; /* Touch-friendly height for mobile */
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 24px;
+    border: 1px solid var(--textColorMain);
+    background: transparent;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 640px) {
+    .Input {
+        min-height: 48px;
+        padding: 14px 20px;
+        font-size: 16px;
+        border-radius: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Input {
+        min-height: 52px;
+        padding: 16px 24px;
+        border-radius: 32px;
+    }
 }
 
 .Input:focus {
-    transition: 0.2s;
+    outline: none;
+    border-color: var(--orangeHover);
+    color: var(--orangeHover);
+    transform: scale(1.02);
+}
+
+.Input:hover:not(:focus) {
+    border-color: var(--orangeHover);
     color: var(--orangeHover);
 }
 
-.Input:hover {
-    transition: 0.2s;
-    color: var(--orangeHover);
-    border: solid 1px var(--orangeHover);
+.Input::placeholder {
+    color: var(--textColorMain);
+    opacity: 0.7;
+    font-size: inherit;
+}
+
+/* Melhor visualização em dispositivos mobile */
+@media (max-width: 640px) {
+    .Input {
+        border-radius: 20px;
+        font-size: 16px; /* Evita zoom no iOS */
+    }
 }

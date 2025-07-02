@@ -1,3 +1,15 @@
 .ProdutosSection h1 {
-    font-size: 36px;
+    font-size: 28px;
+}
+
+@media (min-width: 640px) {
+    .ProdutosSection h1 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ProdutosSection h1 {
+        font-size: 36px;
+    }
 }

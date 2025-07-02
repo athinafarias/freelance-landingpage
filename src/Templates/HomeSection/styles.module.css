@@ -1,9 +1,22 @@
 .HomeSectionContent {
-    width: 28vw;
+    width: 100%;
 }
 
-.HomeSection img {
-    max-width: 463px;
+@media (min-width: 1024px) {
+    .HomeSectionContent {
+        width: 50%;
+        max-width: 500px;
+    }
+}
+
+.HomeSectionImage {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .HomeSectionImage {
+        width: 45%;
+    }
 }
 
 .HomeSectionContent p {

@@ -5,11 +5,11 @@ import CardProduto from "@/components/CardProduto";
 
 const ProdutosSection = () => {
     return (
-        <section id="produtosSection" className={`${styles.ProdutosSection} py-10 px-80 flex flex-col justify-between items-center gap-12`}>
-            <div>
+        <section id="produtosSection" className={`${styles.ProdutosSection} responsive-margin-y flex flex-col justify-center items-center gap-8 lg:gap-12`}>
+            <div className="w-full">
                 <div className="flex flex-col items-center text-center">
                     <h1>Acelere sua jornada com soluções que se adaptam a você!</h1>
-                    <p className="mt-8 mb-16 w-150 ">Seja no tempo curto do dia a dia ou em uma imersão mais profunda, encontre o caminho ideal para evoluir sua liderança em TI:</p>
+                    <p className="mt-6 lg:mt-8 mb-12 lg:mb-16 max-w-4xl px-4">Seja no tempo curto do dia a dia ou em uma imersão mais profunda, encontre o caminho ideal para evoluir sua liderança em TI:</p>
                 </div>
                 <div className="flex flex-col gap-8 items-center">
                     <CardProduto
@@ -41,13 +41,15 @@ const ProdutosSection = () => {
                     />
                 </div>
             </div>
-            <img src="/assets/icons/div.svg" alt="" className="mt-8 mb-8" />
-            <div id="parceirosSection" className="flex flex-col items-center justify-center text-center">
-                <div className="flex flex-col items-center justify-center text-center">
+            
+            <img src="/assets/icons/div.svg" alt="" className="mt-6 mb-6 lg:mt-8 lg:mb-8 w-12 lg:w-16" />
+            
+            <div id="parceirosSection" className="flex flex-col items-center justify-center text-center w-full">
+                <div className="flex flex-col items-center justify-center text-center mb-8 lg:mb-12">
                     <h1>Seja um parceiro e lucre com conhecimento que transforma</h1>
-                    <p className="mt-8 mb-16 w-180">Acredita que a agilidade pode mudar a forma como as equipes trabalham? <br/> Então junte-se a mim como afiliado e:</p>
+                    <p className="mt-6 lg:mt-8 mb-12 lg:mb-16 max-w-4xl px-4">Acredita que a agilidade pode mudar a forma como as equipes trabalham? <br className="hidden lg:block" /> Então junte-se a mim como afiliado e:</p>
                 </div>
-                <div className="flex gap-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 w-full max-w-4xl">
                     <CardAfiliado
                         txtTag="Afiliado"
                         titulo="Indique a Mentoria Online"
@@ -63,7 +65,7 @@ const ProdutosSection = () => {
                         txtBotao="Quero ser parceiro"
                     />
                 </div>
-                <span className="font-semibold text-(--blue) mt-12 mb-16 italic">Simples, transparente e com impacto real.</span>
+                <span className="font-semibold text-(--blue) mt-8 lg:mt-12 mb-12 lg:mb-16 italic">Simples, transparente e com impacto real.</span>
             </div>
         </section>
     )

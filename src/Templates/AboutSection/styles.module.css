@@ -4,6 +4,23 @@
 }
 
 .AboutSectionText {
-    width: 28vw;
+    width: 100%;
     text-align: justify;
+}
+
+@media (min-width: 1024px) {
+    .AboutSectionText {
+        width: 50%;
+        max-width: 500px;
+    }
+}
+
+.AboutSectionImage {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .AboutSectionImage {
+        width: 45%;
+    }
 }

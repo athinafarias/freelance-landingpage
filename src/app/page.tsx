@@ -13,12 +13,19 @@ import Seta from "@/components/Seta";
 
 import ScrollToTop from "react-scroll-to-top";
 import Whatsapp from "@/components/Whatsapp";
-import Link from "@/components/Link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-top min-h-screen p-12">
-      <ScrollToTop smooth component={<Seta variant="blue" direction="up" />} style={{ margin: '20px', marginBottom: '130px'}} />
+    <div className="flex flex-col items-center justify-top min-h-screen">
+      <ScrollToTop 
+        smooth 
+        component={<Seta variant="blue" direction="up" />} 
+        style={{ 
+          margin: '20px', 
+          marginBottom: '80px',
+          zIndex: 40
+        }} 
+      />
       <Whatsapp />
       <Header />
       <HomeSection />

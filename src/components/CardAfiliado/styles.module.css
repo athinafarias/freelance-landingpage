@@ -1,13 +1,27 @@
 .CardAfiliado {
-    width: 524px;
+    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     border: 1px solid var(--purple);
     transition: 0.3s ease-in-out;
 }
 
+@media (min-width: 1024px) {
+    .CardAfiliado {
+        max-width: 524px;
+    }
+}
+
 .CardAfiliado h3 {
     font-family: var(--fontTitle);
     font-weight: 800;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .CardAfiliado h3 {
+        font-size: 1.75rem;
+    }
 }
 
 .CardAfiliado p {

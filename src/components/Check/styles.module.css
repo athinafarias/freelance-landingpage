@@ -1,43 +1,105 @@
 .Check {
     color: var(--textColorMain);
     font-weight: 300;
+    width: 100%;
+}
+
+.Check p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+@media (min-width: 640px) {
+    .Check p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
 }
 
 .Check .options {
     display: flex;
-    gap: 36px;
-    padding-top: 12px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (min-width: 640px) {
+    .Check .options {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Check .options {
+        gap: 36px;
+    }
 }
 
 .Check label {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+@media (min-width: 640px) {
+    .Check label {
+        gap: 12px;
+        padding: 4px;
+        font-size: 16px;
+    }
+}
+
+.Check label:hover {
+    background-color: rgba(220, 115, 68, 0.1);
 }
 
 .Check input {
     appearance: none;
     -webkit-appearance: none;
-
-    width: 20px;
-    height: 20px;
+    
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
     border-radius: 50%;
     border: 1px solid var(--orange);
     background-color: transparent;
     cursor: pointer;
     outline: none;
+    transition: 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+    .Check input {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+    }
 }
 
 .Check input:hover {
     background: var(--orange);
-    border: solid 5px var(--componentsBackground);
+    border: solid 4px var(--componentsBackground);
     outline: solid 1px var(--orange);
-    transition: 0.2s;
+    transform: scale(1.1);
 }
 
 .Check input:checked {
     background: var(--orange);
     border: solid 2px var(--componentsBackground);
     outline: solid 1px var(--orange);
+}
+
+.Check input:focus {
+    outline: solid 2px var(--orangeHover);
+    outline-offset: 2px;
 }

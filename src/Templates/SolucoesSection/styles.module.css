@@ -3,5 +3,13 @@
 }
 
 .SolucoesSectionCards {
-    width: 636px;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .SolucoesSectionCards {
+        width: 636px;
+        max-width: 636px;
+    }
 }

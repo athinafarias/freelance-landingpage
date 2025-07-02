@@ -3,8 +3,21 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 24px var(--glow);
-    width: 100%;
+    width: fit-content;
+    min-width: fit-content;
+    max-width: 100%;
     transition: 0.4s ease-in-out;
+    white-space: nowrap;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .ButtonCTA {
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
 }
 
 .ButtonCTA:hover {

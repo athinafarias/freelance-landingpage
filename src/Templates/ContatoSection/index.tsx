@@ -8,40 +8,69 @@ import ButtonCTA from "@/components/ButtonCTA";
 
 const ContatoSection = () => {
     return (
-        <section id="contatoSection" className={`${styles.ContatoSection} py-30 px-80 flex flex-col justify-between items-center gap-12`}>
+        <section id="contatoSection" className={`${styles.ContatoSection} responsive-margin-y flex flex-col justify-center items-center gap-8 lg:gap-12`}>
             <Seta variant="orange" />
-            <div className="flex flex-col items-center justify-center text-center">
-                <div>
-                    <h1>Receba conteúdos, bônus e atualizações exclusivas</h1>
-                    <h2 className="text-lg text-(--blue) mt-4 mb-12">Quer Evoluir Na Gestão Ágil Com Clareza E Método? Entre Para A Comunidade RF!</h2>
+            
+            {/* Formulário de Contato */}
+            <div className="flex flex-col items-center justify-center text-center w-full max-w-5xl mx-auto">
+                <div className="mb-8 lg:mb-12 px-4">
+                    <h1 className="mb-4">Receba conteúdos, bônus e atualizações exclusivas</h1>
+                    <h2 className="text-base lg:text-lg text-(--blue) mb-6 lg:mb-8">Quer Evoluir Na Gestão Ágil Com Clareza E Método? Entre Para A Comunidade RF!</h2>
+                    <p className="max-w-3xl mx-auto">Preencha o formulário e entre para a minha lista de contatos: você receberá conteúdos práticos, lives exclusivas, cupons especiais e, se já for cliente, bônus complementares ao seu produto.</p>
                 </div>
-                <p className="w-200"> Preencha o formulário e entre para a minha lista de contatos: você receberá conteúdos práticos, lives exclusivas, cupons especiais e, se já for cliente, bônus complementares ao seu produto.</p>
-                <div>
-                    <form action="https://formsubmit.co/cc43fa8d81913a505529dc9046a54157" method="POST" className="flex flex-col gap-4 bg-(--componentsBackground) rounded-2xl px-12 py-8 justify-between items-center mt-14 mb-12">
-                        <legend className="mb-6 font-bold">Vamos Ficar em Contato?</legend>
-                        <Input placeholder="Nome completo" type="text" name="nome" />
-                        <div className="flex gap-6 w-full">
-                            <Input placeholder="E-mail" type="email" name="email" />
-                            <Input placeholder="Celular" type="tel" name="telefone" />
-                        </div>
-                        <Input placeholder="Cargo / Empresa (opcional)" type="text" name="cargo_empresa" />
-                        <div className="flex justify-start gap-36 w-full px-4 py-6 text-left">
-                            <Check 
-                                pergunta="Você já adquiriu algum produto?" 
-                                opcao1="Sim" 
-                                opcao2="Não" 
-                                name="adquiriu_produto" 
-                            />
-                            <Check 
-                                pergunta="Qual produto?" 
-                                opcao1="Mentoria" 
-                                opcao2="Ebook" 
-                                name="tipo_produto" 
-                            />
-                        </div>
-                        <Input placeholder="Como posso te ajudar? (Campo aberto para dúvidas, interesses ou recados)" type="text" name="mensagem" />
-                        <div className="mt-6">
-                            <ButtonNav text="Enviar" variant="fill" type="submit" />
+                
+                {/* Container do formulário centralizado */}
+                <div className="w-full max-w-3xl mx-auto px-4">
+                    <form 
+                        action="https://formsubmit.co/cc43fa8d81913a505529dc9046a54157" 
+                        method="POST" 
+                        className="bg-(--componentsBackground) rounded-2xl px-4 sm:px-6 lg:px-12 py-6 lg:py-8 mx-auto"
+                    >
+                        <legend className="mb-6 lg:mb-8 font-bold text-center text-lg lg:text-xl">Vamos Ficar em Contato?</legend>
+                        
+                        {/* Grid responsivo para o formulário */}
+                        <div className="grid grid-cols-1 gap-4 lg:gap-6">
+                            {/* Nome completo */}
+                            <div className="w-full">
+                                <Input placeholder="Nome completo" type="text" name="nome" />
+                            </div>
+                            
+                            {/* Email e Telefone */}
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                                <Input placeholder="E-mail" type="email" name="email" />
+                                <Input placeholder="Celular" type="tel" name="telefone" />
+                            </div>
+                            
+                            {/* Cargo/Empresa */}
+                            <div className="w-full">
+                                <Input placeholder="Cargo / Empresa (opcional)" type="text" name="cargo_empresa" />
+                            </div>
+                            
+                            {/* Checkboxes */}
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 py-4 lg:py-6">
+                                <Check 
+                                    pergunta="Você já adquiriu algum produto?" 
+                                    opcao1="Sim" 
+                                    opcao2="Não" 
+                                    name="adquiriu_produto" 
+                                />
+                                <Check 
+                                    pergunta="Qual produto?" 
+                                    opcao1="Mentoria" 
+                                    opcao2="Ebook" 
+                                    name="tipo_produto" 
+                                />
+                            </div>
+                            
+                            {/* Campo de mensagem */}
+                            <div className="w-full">
+                                <Input placeholder="Como posso te ajudar? (Campo aberto para dúvidas, interesses ou recados)" type="text" name="mensagem" />
+                            </div>
+                            
+                            {/* Botão de envio */}
+                            <div className="flex justify-center mt-4 lg:mt-6">
+                                <ButtonNav text="Enviar" variant="fill" type="submit" />
+                            </div>
                         </div>
                         
                         {/* Campos ocultos do FormSubmit */}
@@ -52,13 +81,22 @@ const ContatoSection = () => {
                     </form>
                 </div>
             </div>
-            <img src="/assets/icons/div.svg" alt="" />
-            <div className="flex items-center justify-center gap-24">
-                <img src="/assets/images/section04.png" alt="" />
-                <div className="flex flex-col items-center justify-center gap-10 text-center">
+            
+            <img src="/assets/icons/div.svg" alt="" className="w-12 lg:w-16 mt-8" />
+            
+            {/* Seção CTA Final */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 w-full max-w-6xl">
+                <div className="w-full max-w-sm lg:max-w-md order-2 lg:order-1">
+                    <img 
+                        src="/assets/images/section04.png" 
+                        alt="Pronto para mudar" 
+                        className="w-full h-auto"
+                    />
+                </div>
+                <div className="flex flex-col items-center justify-center gap-6 lg:gap-10 text-center order-1 lg:order-2">
                     <h1>Está pronto para mudar a realidade do seu time?</h1>
-                    <p>Você pode continuar apagando incêndios... ou <br/> aprender a liderar com método, foco e clareza!</p>
-                    <ButtonCTA link="" text="Quero Começar Agora" padding="30px 150px" />
+                    <p>Você pode continuar apagando incêndios... ou <br className="hidden lg:block" /> aprender a liderar com método, foco e clareza!</p>
+                    <ButtonCTA link="" text="Quero Começar Agora" padding="20px 40px lg:30px 60px" />
                 </div>
             </div>
         </section>

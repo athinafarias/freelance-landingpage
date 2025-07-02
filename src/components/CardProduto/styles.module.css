@@ -1,13 +1,26 @@
 .CardProduto {
-    width: 56vw;
+    width: 100%;
+    max-width: 100%;
     border: 1px solid var(--purple);
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
 }
 
+@media (min-width: 1024px) {
+    .CardProduto {
+        max-width: 1200px;
+    }
+}
+
 .CardProduto h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: var(--fontTitle);
+}
+
+@media (min-width: 640px) {
+    .CardProduto h3 {
+        font-size: 1.4rem;
+    }
 }
 
 .CardProduto:hover {

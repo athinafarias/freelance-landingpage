@@ -1,0 +1,133 @@
+.carouselContainer {
+    width: 100%;
+    position: relative;
+}
+
+/* Mobile Carousel Styles */
+.mobileCarousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.carouselWrapper {
+    width: 100%;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+}
+
+.carouselWrapper:active {
+    cursor: grabbing;
+}
+
+.carouselTrack {
+    display: flex;
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    will-change: transform;
+}
+
+.carouselSlide {
+    min-width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.carouselSlide > div {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+/* Dots Indicator */
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 16px;
+    padding: 10px 0;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--textColorMain);
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+    .dot {
+        width: 10px;
+        height: 10px;
+        gap: 8px;
+    }
+    
+    .dotsContainer {
+        gap: 8px;
+        margin-top: 20px;
+        padding: 12px 0;
+    }
+}
+
+.dot:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.activeDot {
+    background: var(--blue);
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* Desktop Grid */
+.desktopGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .mobileCarousel {
+        padding: 0 8px;
+    }
+    
+    .carouselSlide {
+        padding: 0 3px;
+    }
+    
+    .carouselSlide > div {
+        max-height: 75vh;
+    }
+    
+    .dotsContainer {
+        margin-top: 12px;
+        padding: 8px 0;
+        gap: 5px;
+    }
+    
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+} 

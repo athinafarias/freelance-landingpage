@@ -5,13 +5,23 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    min-width: 140px;
+}
+
+@media (min-width: 768px) {
+    .FooterSection {
+        min-width: 160px;
+        gap: 10px;
+    }
 }
 
 @media (min-width: 1024px) {
     .FooterSection {
-        text-align: right;
-        justify-content: right;
-        align-items: flex-end;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        min-width: 180px;
+        gap: 12px;
     }
 }
 
@@ -19,6 +29,14 @@
     font-weight: 600;
     font-size: 0.9rem;
     padding-bottom: 6px;
+    margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+    .FooterLi {
+        font-size: 1rem;
+        padding-bottom: 8px;
+    }
 }
 
 .FooterHr {
@@ -26,4 +44,10 @@
     border-top: solid 1px var(--orange);
     width: 100%;
     margin: 26px 0;
+}
+
+@media (min-width: 768px) {
+    .FooterHr {
+        margin: 32px 0;
+    }
 }

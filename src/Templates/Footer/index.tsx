@@ -5,12 +5,12 @@ import styles from "./styles.module.css";
 const Footer = () => {
     return (
         <footer className={`${styles.Footer} flex flex-col items-center justify-center w-full responsive-padding mt-16 lg:mt-24`}>
-                <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between w-full gap-8 lg:gap-12">
+                <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between w-full gap-8 lg:gap-16 xl:gap-20">
                     <div className="flex justify-center lg:justify-start">
                         <img src="/assets/RF.png" alt="logo" className="w-12 h-12 lg:w-14 lg:h-14 rounded-full" />
                     </div>
                     
-                    <div className="flex flex-col sm:flex-row justify-center lg:justify-end gap-8 lg:gap-12 text-center lg:text-right flex-1">
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 lg:gap-12 xl:gap-16 text-center flex-1">
                         <ul className={styles.FooterSection}>
                             <li className={`${styles.FooterLi}`}>Produtos</li>
                             <li><Link target="_blank" link="" text="Mentoria" fontWeight="300" /></li>
@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className={`${styles.FooterHr}`} />
-                <p className="self-center lg:self-start text-center lg:text-left text-(--orange) text-sm">Copyright © 2025 RFBernardes</p>
+                <p className="text-center text-(--orange) text-sm">Copyright © 2025 RFBernardes</p>
         </footer>
     )
 }

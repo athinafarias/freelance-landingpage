@@ -15,7 +15,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 30;
+    z-index: 35;
 }
 
 @media (min-width: 768px) {

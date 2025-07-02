@@ -28,7 +28,7 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden-mobile lg:flex items-center justify-center gap-8">
+                <nav className="hidden lg:flex items-center justify-center gap-6 xl:gap-8">
                     <Link target="_self" link="#aboutSection" text="SOBRE MIM" fontWeight="600" />
                     <Link target="_self" link="#solucoesSection" text="O QUE RESOLVO" fontWeight="600" />
                     <Link target="_self" link="#parceirosSection" text="SEJA UM PARCEIRO" fontWeight="600" />
@@ -36,14 +36,14 @@ const Header = () => {
                 </nav>
 
                 {/* Desktop CTA Buttons */}
-                <div className="hidden-mobile lg:flex items-center gap-4">
+                <div className="hidden lg:flex items-center gap-3 xl:gap-4">
                     <ButtonNav link="#contatoSection" text="CONTATO" variant="outline" />
                     <ButtonNav link="#produtosSection" text="PRODUTOS" variant="fill" />
                 </div>
 
                 {/* Mobile Menu Button */}
                 <button 
-                    className="show-mobile lg:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1"
+                    className="lg:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1"
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
                 >
@@ -60,7 +60,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={`show-mobile lg:hidden transition-all duration-300 ease-in-out ${
+            <div className={`lg:hidden transition-all duration-300 ease-in-out ${
                 isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             } overflow-hidden bg-[var(--background)] border-t border-gray-800`}>
                 <nav className="container-responsive py-6 flex flex-col space-y-4">

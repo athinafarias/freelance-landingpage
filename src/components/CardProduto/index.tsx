@@ -14,7 +14,7 @@ const CardProduto:FC <CardProdutoProps> = ({ txtTag, titulo, text, txtList1, txt
                     <img 
                         src={srcImg} 
                         alt={`Ilustração ${titulo}`} 
-                        className="w-full max-w-sm lg:max-w-md h-auto"
+                        className="w-full max-w-sm lg:max-w-md h-auto rounded-xl"
                     />
                 </div>
             )}
@@ -41,7 +41,7 @@ const CardProduto:FC <CardProdutoProps> = ({ txtTag, titulo, text, txtList1, txt
                     <img 
                         src={srcImg} 
                         alt={`Ilustração ${titulo}`} 
-                        className="w-full max-w-sm lg:max-w-md h-auto"
+                        className="w-full max-w-sm lg:max-w-md h-auto rounded-xl"
                     />
                 </div>
             )}

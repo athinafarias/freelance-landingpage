@@ -8,9 +8,9 @@ const AboutSection = () => {
 
                 <div className={`${styles.AboutSectionImage} flex justify-center lg:justify-start w-full lg:w-auto order-2 lg:order-1`}>
                     <img 
-                        src="/assets/images/section02.png" 
-                        alt="Rafael Forneiro" 
-                        className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto"
+                        src="/assets/images/about-rafael.png" 
+                        alt="Rafael Forneiro - CEO da RF Consultoria e Especialista em Gestão Ágil" 
+                        className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto object-cover rounded-lg"
                     />
                 </div>
 

@@ -22,7 +22,7 @@ const ProdutosSection = () => {
                         text2="O conteúdo? São as mesmas estratégias que uso em mentorias individuais, agora disponíveis para você, no seu ritmo. Com videoaulas, templates prontos e uma comunidade para trocar ideias." 
                         linkCTA=""
                         txtButton="Quero fazer parte"
-                        srcImg="/assets/images/produto01.png"
+                        srcImg="/assets/ChatGPT Image 7_07_2025, 10_37_10.png"
                         imgPosition='right'
                     />
 
@@ -36,7 +36,7 @@ const ProdutosSection = () => {
                         text2=""
                         linkCTA="https://go.hotmart.com/C99184257E"
                         txtButton="Quero meu Ebook agora"
-                        srcImg="/assets/images/produto02.png"
+                        srcImg="/assets/ChatGPT Image 7_07_2025, 10_37_10.png"
                         imgPosition='left'
                     />
                 </div>

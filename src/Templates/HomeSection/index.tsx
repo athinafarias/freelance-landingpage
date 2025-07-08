@@ -19,9 +19,9 @@ const HomeSection = () => {
             </div>
             <div className={`${styles.HomeSectionImage} flex justify-center lg:justify-end w-full lg:w-auto`}>
                 <img 
-                    src="/assets/images/section01.png" 
-                    alt="Ilustração sobre gestão ágil" 
-                    className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto"
+                    src="/assets/images/hero-rafael.png" 
+                    alt="Rafael Forneiro - Especialista em Gestão Ágil de Projetos" 
+                    className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto object-cover rounded-lg"
                 />
             </div>
         </section>
